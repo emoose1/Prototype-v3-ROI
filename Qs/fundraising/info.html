@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../imgs/fav.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="wrap">
+            <a href="../../index.html">
+                <img class="logo" src="../../imgs/techbridgelogoduo.png" alt="TechBridge Logo">
+            </a>
+            <h1 class="page-header">Fundraising Management - Information Page</h1>
+        </div>
+    </header>
+    <section class="form">
+        <form class="form-box">
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+                <label for="projectNum">Project Number</label>
+                <input type="text" class="form-control" id="projectNum">
+            </div>
+
+            <div class="form-group">
+                <label for="orgName">Organization Name</label>
+                <input type="text" class="form-control" id="orgName">
+            </div>
+
+            <div class="nav-button">
+                <a href="hoursSaved.html">
+                    <button type="button" onclick="userInfo()" class="btn btn-primary">Begin</button></a>
+            </div>    
+        </form>
+
+    </section>
+
+    <div class="progress" style="width: 55%">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" style="width: 0%"><label></label></div>
+    </div>
+
+
+    <!-- jQuery, Poppers, Bootstrap.JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

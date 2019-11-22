@@ -1,0 +1,29 @@
+@import '../abstracts/_abstracts'
+div.question-box
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    padding: 1.1rem
+    h1.question
+        font-size: 1.8rem
+        color: $blue
+        font-weight: 400
+        flex-basis: 80%
+    button.help
+        flex-basis: 5%
+        height: 80%
+        @include btn
+
+div.popover-body
+    font-size: 1.3rem
+
+
+div.progress
+    display: flex
+    border-radius: 5rem
+    height: 2.25rem
+    box-shadow: 0 0 .2rem black
+    label
+        text-align: center
+        font-weight: bolder
+        font-size: 1.6rem

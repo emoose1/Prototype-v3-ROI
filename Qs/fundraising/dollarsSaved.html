@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../imgs/fav.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Dollars Saved</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="wrap">
+            <a href="../../index.html">
+                <img class="logo" src="../../imgs/techbridgelogoduo.png" alt="TechBridge Logo">
+            </a>
+            <h1 class="page-header">Dollars Saved</h1>
+        </div>
+    </header>
+    <section class="form">
+        <form class="form-box">
+
+            <!-- Question 1 -->
+            <div class="question-box">
+                <h1 class="question">On average, how much revenue is generated from donations annually?</h1>
+
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-box">
+                <h1 class="question">On average, what is the value of grant revenue won by your organization?</h1>
+
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-box">
+                <h1 class="question">On average, how much money is spent on fundraising management systems annually
+                    (including licensing, hosting, and support fees)?</h1>
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <!-- CDR 1 -->
+            <div class="question-box">
+                <h1 class="question">Annual gross fundraising expenses.</h1>
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <!-- CDR 2 -->
+            <div class="question-box">
+                <h1 class="question">Annual gross fundraising revenue.</h1>
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+
+            <div class="nav-button">
+                <a href="hoursSaved.html">
+                    <button type="button" onclick="userInfo()" class="btn btn-primary">Back</button>
+                </a>
+
+                <a href="ClientsServed.html">
+                    <button type="button" onclick="userInfo()" class="btn btn-primary">Next</button>
+                </a>
+            </div>
+        </form>
+
+    </section>
+
+    <div class="progress" style="width: 55%">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" style="width: 40%"><label>40%</label></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../imgs/fav.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Clients Served</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="wrap">
+            <a href="../../index.html">
+                <img class="logo" src="../../imgs/techbridgelogoduo.png" alt="TechBridge Logo">
+            </a>
+
+            <h1 class="page-header">Clients Served</h1>
+        </div>
+    </header>
+    <section class="form">
+        <form class="form-box">
+            <div class="question-box">
+                <h1 class="question">What is your organization's annual budget for the year?</h1>
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <div class="question-box">
+                <h1 class="question">How many unique clients does your organization serve in a year?</h1>
+                <button type="button" class="btn btn-secondary help" data-container="body" data-toggle="popover"
+                    data-placement="bottom" data-content="This includes generating and communicating donation reports, 
+                hours spent tracking and reporting on in-kind donation gifts, reconciling 
+                donations with accounting systems, and hours spent writing thank you letters for donations.">
+                    Help
+                </button>
+                <paper-slider value="183" max="255" secondary-progress="200" editable>
+                </paper-slider>
+            </div>
+
+            <div class="nav-button">
+                <a href="dollarsSaved.html">
+                    <button type="button" onclick="userInfo()" class="btn btn-primary">Back</button>
+                </a>
+                <a href="results.html">
+                    <button type="button" onclick="userInfo()" class="btn btn-primary">Next</button>
+                </a>
+            </div>
+        </form>
+
+    </section>
+
+    <div class="progress" style="width: 55%">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" style="width: 60%"><label>60%</label></div>
+    </div>
+
+    <!-- jQuery, Poppers, Bootstrap.JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+</body>
+
+</html>

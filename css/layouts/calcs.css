@@ -1,0 +1,72 @@
+section.calcs, section.form {
+  position: relative;
+  z-index: 1;
+  bottom: 8rem;
+}
+
+div.calc-row {
+  width: 100%;
+  display: flex;
+}
+
+div.calc {
+  min-height: 35vh;
+  height: fit-content;
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.calc a.ROI-icon {
+  transform: scale(1);
+}
+div.calc a.ROI-icon:hover {
+  transform: scale(1.2);
+}
+div.calc img.ROI-pic {
+  height: 85%;
+  width: 100%;
+  max-width: 27rem;
+  max-height: 24rem;
+}
+div.calc a.ROI-type, div.calc h2.ROI-type {
+  text-align: center;
+  color: #104b7d;
+  font-size: 1.5rem;
+  margin-top: -1.7rem;
+}
+
+form.form-box {
+  background-color: #a8dcc6;
+  padding: 3rem;
+  border-radius: 2rem;
+  width: 80vw;
+  max-width: 1024px;
+}
+form.form-box div.form-group {
+  padding: 1rem 0;
+}
+form.form-box div.form-group label {
+  font-size: 1.7rem;
+}
+form.form-box div.form-group input.form-control {
+  font-size: 1.3rem;
+}
+form.form-box button.btn-primary {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  padding-left: 2rem;
+  background-color: #104b7d;
+  border-color: whitesmoke;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.75rem;
+}
+
+div.nav-button {
+  padding-top: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=calcs.css.map */

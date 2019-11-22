@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,GAAG,AAAA,aAAa,CAAC;EACb,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,IAAI;CAOQ;;AAXzB,AAKI,GALD,AAAA,aAAa,CAKZ,EAAE,AAAA,SAAS,CAAC;EACR,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,GAAG;CAAG;;AAP1B,AAQI,GARD,AAAA,aAAa,CAQZ,MAAM,AAAA,KAAK,CAAC;EACR,UAAU,EAAE,GAAG;EACf,MAAM,EAAE,GAAG;EEkBf,gBAAgB,EA3Bb,OAAO;EA4BV,YAAY,EAAE,UAAU;EACxB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,UAAU;CFpBA;;AAGvB,AAAA,GAAG,AAAA,aAAa,CAAC;EACb,SAAS,EAAE,MAAM;CAAG",
+    "sources": [
+        "question.sass",
+        "../abstracts/_abstracts.sass",
+        "../abstracts/mfv.sass"
+    ],
+    "names": [],
+    "file": "question.css"
+}
