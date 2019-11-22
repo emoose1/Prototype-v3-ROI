@@ -28,26 +28,38 @@
             <a href="../../index.html">
                 <img class="logo" src="../../imgs/techbridgelogoduo.png" alt="TechBridge Logo">
             </a>
-            <h1 class="page-header">Information Page</h1>
+            <h1 class="page-header">Contact Information</h1>
         </div>
     </header>
     <section class="form">
         <form class="form-box">
 
+
             <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <label for="tbContactName" class="info-label">TechBridge Contact Name</label>
+                <input type="text" class="form-control" id="tbContactName">
             </div>
 
             <div class="form-group">
-                <label for="projectNum">Project Number</label>
-                <input type="text" class="form-control" id="projectNum">
-            </div>
-
-            <div class="form-group">
-                <label for="orgName">Organization Name</label>
+                <label for="orgName" class="info-label">Org. Name</label>
                 <input type="text" class="form-control" id="orgName">
             </div>
+
+            <div class="form-group">
+                <label for="projectNum" class="info-label">Project Number</label>
+                <input type="number" class="form-control" id="projectNum">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="info-label">Org. Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            
+            <div class="form-group">
+                <label for="tel" class="info-label">Org. Phone Number</label>
+                <input type="tel" class="form-control" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="telNum">
+            </div>
+            
 
             <div class="nav-button">
                 <a href="hoursSaved.html">

@@ -1,9 +1,9 @@
 @import '../abstracts/_abstracts'
 div.question-box
     display: flex
-    flex-wrap: wrap
+    flex-wrap: nowrap
     align-items: center
-    
+    margin: .3rem 0
     h1.question
         font-size: 1.8rem
         color: $blue
@@ -20,14 +20,18 @@ div.popover-body
 div.question-divider
     padding-bottom: 1.3rem
 
+
 div.progress
     display: flex
     border-radius: 5rem
-    height: 2.25rem
-    box-shadow: 0 0 .2rem black
-    margin-bottom: 5rem
+    height: 2.4rem
+    box-shadow: 0 0 .3rem black
+    margin-bottom: 4rem
+    margin-top: 4rem
     label
         text-align: center
         font-weight: bolder
-        font-size: 1.6rem
-        padding-top: .3rem
+        font-size: 1.5rem
+        margin: auto
+    .progress-bar
+        background-color: $blue

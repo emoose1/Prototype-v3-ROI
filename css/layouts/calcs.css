@@ -1,7 +1,5 @@
 section.calcs, section.form {
   position: relative;
-  z-index: 1;
-  bottom: 8rem;
 }
 
 div.calc-row {
@@ -21,7 +19,7 @@ div.calc a.ROI-icon {
   transform: scale(1);
 }
 div.calc a.ROI-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 div.calc img.ROI-pic {
   height: 85%;
@@ -37,20 +35,20 @@ div.calc a.ROI-type, div.calc h2.ROI-type {
 }
 
 form.form-box {
-  background-color: #a8dcc6;
   padding: 3rem;
   border-radius: 2rem;
   width: 80vw;
   max-width: 1024px;
 }
-form.form-box div.form-group {
-  padding: 1rem 0;
+form.form-box div.form-group input[type=text], form.form-box div.form-group input[type=email], form.form-box div.form-group input[type=number], form.form-box div.form-group input[type=tel] {
+  background-color: #7FC9B0;
 }
-form.form-box div.form-group label {
-  font-size: 1.7rem;
+form.form-box div.form-group label.info-label {
+  font-size: 1.8rem;
+  color: #104b7d;
 }
-form.form-box div.form-group input.form-control {
-  font-size: 1.3rem;
+form.form-box div.form-group input {
+  margin: 0.3rem 0;
 }
 form.form-box button.btn-primary {
   font-size: 1.7rem;

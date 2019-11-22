@@ -1,7 +1,8 @@
 div.question-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  margin: 0.3rem 0;
 }
 div.question-box h1.question {
   font-size: 1.8rem;
@@ -30,15 +31,19 @@ div.question-divider {
 div.progress {
   display: flex;
   border-radius: 5rem;
-  height: 2.25rem;
-  box-shadow: 0 0 0.2rem black;
-  margin-bottom: 5rem;
+  height: 2.4rem;
+  box-shadow: 0 0 0.3rem black;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 div.progress label {
   text-align: center;
   font-weight: bolder;
-  font-size: 1.6rem;
-  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  margin: auto;
+}
+div.progress .progress-bar {
+  background-color: #104b7d;
 }
 
 /*# sourceMappingURL=question.css.map */

@@ -1,5 +1,5 @@
 header.main-header {
-  background-color: whitesmoke;
+  background-color: transparent;
   height: 25rem;
   width: 100%;
 }
@@ -9,21 +9,22 @@ header.main-header div.wrap {
   margin: auto;
 }
 header.main-header img.logo {
-  padding: 1rem 1.5rem;
+  padding: 1.75rem 1rem;
   height: 5rem;
   box-sizing: content-box;
 }
 header.main-header h1 {
   color: #104b7d;
   font-size: 2.3rem;
-  padding: 1rem 1.5rem;
-  font-weight: 700;
+  padding: 1.2rem 1.3rem;
+  font-weight: 900;
 }
 
 div.question-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  margin: 0.3rem 0;
 }
 div.question-box h1.question {
   font-size: 1.8rem;
@@ -52,15 +53,19 @@ div.question-divider {
 div.progress {
   display: flex;
   border-radius: 5rem;
-  height: 2.25rem;
-  box-shadow: 0 0 0.2rem black;
-  margin-bottom: 5rem;
+  height: 2.4rem;
+  box-shadow: 0 0 0.3rem black;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 div.progress label {
   text-align: center;
   font-weight: bolder;
-  font-size: 1.6rem;
-  padding-top: 0.3rem;
+  font-size: 1.5rem;
+  margin: auto;
+}
+div.progress .progress-bar {
+  background-color: #104b7d;
 }
 
 * {
@@ -76,11 +81,20 @@ body, html {
 }
 
 body {
+  background-color: #D8EEEB;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.index-body {
   background-color: #d8eee9;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(#F7F7F7, #F7F7F7 50%, #E2EEEA, #E2EEEA 50%);
 }
 
 a {
@@ -89,8 +103,6 @@ a {
 
 section.calcs, section.form {
   position: relative;
-  z-index: 1;
-  bottom: 8rem;
 }
 
 div.calc-row {
@@ -110,7 +122,7 @@ div.calc a.ROI-icon {
   transform: scale(1);
 }
 div.calc a.ROI-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 div.calc img.ROI-pic {
   height: 85%;
@@ -126,20 +138,20 @@ div.calc a.ROI-type, div.calc h2.ROI-type {
 }
 
 form.form-box {
-  background-color: #a8dcc6;
   padding: 3rem;
   border-radius: 2rem;
   width: 80vw;
   max-width: 1024px;
 }
-form.form-box div.form-group {
-  padding: 1rem 0;
+form.form-box div.form-group input[type=text], form.form-box div.form-group input[type=email], form.form-box div.form-group input[type=number], form.form-box div.form-group input[type=tel] {
+  background-color: #7FC9B0;
 }
-form.form-box div.form-group label {
-  font-size: 1.7rem;
+form.form-box div.form-group label.info-label {
+  font-size: 1.8rem;
+  color: #104b7d;
 }
-form.form-box div.form-group input.form-control {
-  font-size: 1.3rem;
+form.form-box div.form-group input {
+  margin: 0.3rem 0;
 }
 form.form-box button.btn-primary {
   font-size: 1.7rem;
@@ -166,8 +178,8 @@ div.nav-button {
   -webkit-appearance: none;
   width: 75%;
   height: 1.25rem;
-  margin-top: 0.5rem;
-  background: #7CC3AB;
+  margin: 2rem 0rem 3rem;
+  background: #7FC9B0;
   border-radius: 1rem;
   outline: none;
   opacity: 1;

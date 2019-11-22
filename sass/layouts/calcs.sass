@@ -2,8 +2,6 @@
 
 section.calcs, section.form
     position: relative
-    z-index: 1
-    bottom: 8rem
 
 div.calc-row
     width: 100%
@@ -18,7 +16,7 @@ div.calc
     a.ROI-icon
         transform: scale(1)
         &:hover
-            transform: scale(1.2)
+            transform: scale(1.1)
    
     img.ROI-pic
         height: 85%
@@ -34,17 +32,18 @@ div.calc
 
 // INFORMATION PAGE
 form.form-box
-    background-color: lighten($seafoam, 15%)
     padding: 3rem
     border-radius: 2rem
     width: 80vw
     max-width: 1024px
     div.form-group
-        padding: 1rem 0
-        label
-            font-size: 1.7rem
-        input.form-control
-            font-size: 1.3rem
+        input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
+            background-color: $slider-background-green
+        label.info-label
+            font-size: 1.8rem
+            color: $blue
+        input
+            margin: .3rem 0
 
     button.btn-primary
         font-size: 1.7rem
