@@ -1,0 +1,36 @@
+.slidecontainer {
+  width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 1.25rem;
+  margin-top: 0.5rem;
+  background: #7CC3AB;
+  border-radius: 1rem;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 0.9;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background: #0266AC;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #0266AC;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=slider.css.map */

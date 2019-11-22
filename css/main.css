@@ -24,7 +24,6 @@ div.question-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 1.1rem;
 }
 div.question-box h1.question {
   font-size: 1.8rem;
@@ -35,7 +34,6 @@ div.question-box h1.question {
 div.question-box button.help {
   flex-basis: 5%;
   height: 80%;
-  padding-left: 2rem;
   background-color: #104b7d;
   border-color: whitesmoke;
   border-radius: 5rem;
@@ -47,16 +45,22 @@ div.popover-body {
   font-size: 1.3rem;
 }
 
+div.question-divider {
+  padding-bottom: 1.3rem;
+}
+
 div.progress {
   display: flex;
   border-radius: 5rem;
   height: 2.25rem;
   box-shadow: 0 0 0.2rem black;
+  margin-bottom: 5rem;
 }
 div.progress label {
   text-align: center;
   font-weight: bolder;
   font-size: 1.6rem;
+  padding-top: 0.3rem;
 }
 
 * {
@@ -152,6 +156,41 @@ div.nav-button {
   padding-top: 3rem;
   margin: 0 auto;
   text-align: center;
+}
+
+.slidecontainer {
+  width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 75%;
+  height: 1.25rem;
+  margin-top: 0.5rem;
+  background: #7CC3AB;
+  border-radius: 1rem;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 0.9;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background: #0266AC;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #0266AC;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

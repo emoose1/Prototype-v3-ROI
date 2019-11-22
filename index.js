@@ -14,6 +14,8 @@ var ROI = {
     clients: 0
 }
 
+
+
 //Under Construction
 function windowAlert() {
     alert("Calculator currently under construction, please check back soon!");

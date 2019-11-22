@@ -1,0 +1,32 @@
+.slidecontainer
+  width: 50%
+
+.slider
+  -webkit-appearance: none
+  width: 75%
+  height: 1.25rem
+  margin-top: .5rem
+  background: #7CC3AB
+  border-radius: 1rem
+  outline: none
+  opacity: 1
+  -webkit-transition: .2s
+  transition: opacity .2s
+
+  &:hover
+    opacity: .9
+
+  &::-webkit-slider-thumb
+    -webkit-appearance: none
+    appearance: none
+    width: 2.5rem
+    height: 2.5rem
+    border-radius: 2rem
+    background: #0266AC
+    cursor: pointer
+
+  &::-moz-range-thumb
+    width: 25px
+    height: 25px
+    background: #0266AC
+    cursor: pointer
