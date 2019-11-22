@@ -7,15 +7,10 @@ body, html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
-  background-color: #D8EEEB;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: whitesmoke;
 }
 
 body.index-body {
@@ -24,7 +19,6 @@ body.index-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(#F7F7F7, #F7F7F7 50%, #E2EEEA, #E2EEEA 50%);
 }
 
 a {

@@ -2,12 +2,14 @@
 
 section.calcs, section.form
     position: relative
+    padding: 2rem 0
+    bottom: 15rem
+    @include wrap
 
 div.calc-row
     width: 100%
     display: flex
 div.calc
-    min-height: 35vh
     height: fit-content
     flex-basis: 33%
     display: flex
@@ -25,11 +27,16 @@ div.calc
         max-height: 24rem
         
     a.ROI-type, h2.ROI-type
-        text-align: center
+        text-align: left
         color: $blue
         font-size: 1.5rem
         margin-top: -1.7rem
-
+div.progress
+    margin: auto
+    position: relative
+    bottom: 15rem
+    margin-bottom: 3rem
+    
 // INFORMATION PAGE
 form.form-box
     padding: 3rem

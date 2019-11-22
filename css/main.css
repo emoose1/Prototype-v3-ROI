@@ -1,15 +1,16 @@
 header.main-header {
-  background-color: transparent;
-  height: 25rem;
   width: 100%;
+  background-color: whitesmoke;
+  position: relative;
 }
 header.main-header div.wrap {
+  height: 30rem;
   max-width: 1024px;
   width: 100vw;
   margin: auto;
 }
 header.main-header img.logo {
-  padding: 1.75rem 1rem;
+  padding: 5.75rem 0rem 1rem 1.3rem;
   height: 5rem;
   box-sizing: content-box;
 }
@@ -18,6 +19,7 @@ header.main-header h1 {
   font-size: 2.3rem;
   padding: 1.2rem 1.3rem;
   font-weight: 900;
+  font-style: strong;
 }
 
 div.question-box {
@@ -77,15 +79,10 @@ body, html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
-  background-color: #D8EEEB;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: whitesmoke;
 }
 
 body.index-body {
@@ -94,7 +91,6 @@ body.index-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(#F7F7F7, #F7F7F7 50%, #E2EEEA, #E2EEEA 50%);
 }
 
 a {
@@ -103,6 +99,11 @@ a {
 
 section.calcs, section.form {
   position: relative;
+  padding: 2rem 0;
+  bottom: 15rem;
+  max-width: 1024px;
+  width: 100vw;
+  margin: auto;
 }
 
 div.calc-row {
@@ -111,7 +112,6 @@ div.calc-row {
 }
 
 div.calc {
-  min-height: 35vh;
   height: fit-content;
   flex-basis: 33%;
   display: flex;
@@ -131,10 +131,17 @@ div.calc img.ROI-pic {
   max-height: 24rem;
 }
 div.calc a.ROI-type, div.calc h2.ROI-type {
-  text-align: center;
+  text-align: left;
   color: #104b7d;
   font-size: 1.5rem;
   margin-top: -1.7rem;
+}
+
+div.progress {
+  margin: auto;
+  position: relative;
+  bottom: 15rem;
+  margin-bottom: 3rem;
 }
 
 form.form-box {
