@@ -48,7 +48,8 @@
             </div>
 
             <div class="range-slider">
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+                <input type="range" min="0" max="21" step="5" value="0" class="slider" id="myRange">
+                <h1 id="demo"></h1>
             </div>
             
             <div class="question-divider">
@@ -150,7 +151,7 @@
         output.innerHTML = slider.value; // Display the default slider value
 
         // Update the current slider value (each time you drag the slider handle)
-        slider.oninput = function() {
+        slider.onchange = function() {
         output.innerHTML = this.value;
         }        
     </script>
