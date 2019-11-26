@@ -5,17 +5,16 @@
 // }
 
 var ROI = {
-    email: '',
+    orgEmail: '',
+    TBcontact: '',
     projectNum: '',
     orgName: '',
+    phone: '',
     time: 0,
     dollars: 0,
     cdr: 0,
     clients: 0
 }
-
-
-
 //Under Construction
 function windowAlert() {
     alert("Calculator currently under construction, please check back soon!");
@@ -23,8 +22,10 @@ function windowAlert() {
 
 //Collecting User Info
 function userInfo(){
-    ROI.email = $('#email').val();
+    ROI.orgEmail = $('#email').val();
+    ROI.TBcontact = $('#tbContactName').val();
     ROI.projectNum = $('#projectNum').val();
+    ROI.phone = $('#telNum')
     ROI.orgName = $('#orgName').val();
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
 }
