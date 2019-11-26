@@ -35,6 +35,8 @@ function time(){
     var hours = [$('#timeQ1').val(), $('#timeQ2').val(), $('#timeQ3').val(), $('#timeQ4').val()];
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.time = hours.reduce((a,b) => parseInt(a)+parseInt(b),0);
+    // annual value
+    ROI.time *= 12;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
     //Calculation - summing all the hours
     
@@ -44,6 +46,8 @@ function money(){
     var dollars = [$('#moneyQ1').val(), $('#moneyQ2').val(), $('#moneyQ3').val()];
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.dollars = dollars.reduce((a,b) => parseInt(a)+parseInt(b),0); 
+    // annual value
+    ROI.dollars *=12;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
     
 }
