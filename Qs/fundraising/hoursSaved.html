@@ -37,8 +37,8 @@
 
             <!-- Question 1 -->
             <div class="question-box">
-                <h1 class="question">On average, how many hours are spent monthly on administrative work concerning
-                    donations?</h1>
+                <label class="question" for="hoursQ1">On average, how many hours are spent monthly on administrative work concerning
+                    donations?</label>
                 <button type="button" class="btn btn-secondary help" data-container="body" data-toggle="popover"
                     data-placement="top" data-content="This includes generating and communicating donation reports, 
                     hours spent tracking and reporting on in-kind donation gifts, reconciling 
@@ -47,9 +47,9 @@
                 </button>
             </div>
 
-            <div class="range-slider">
-                <input type="range" min="0" max="20" step="5" value="0" class="slider" id="myRange">
-                <h1 id="demo"></h1>
+            <div class="range-slider" id="hoursQ1">
+                <input type="range" min="0" max="20" step="5" value="0" class="slider" id="hoursQ1-slider" onchange="showHourRanges(this)">
+                <label id="range-output">0</label>
             </div>
             
             <div class="question-divider">
@@ -58,11 +58,12 @@
 
             <!-- Question 2 -->
             <div class="question-box">
-                <h1 class="question">On average, how many hours are spent monthly conducting and planning major outreach
-                    and matching gift campaigns?</h1>
+                <label class="question" for="hoursQ2">On average, how many hours are spent monthly conducting and planning major outreach
+                    and matching gift campaigns?</label>
             </div>
-            <div class="range-slider">
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+            <div class="range-slider" id="hoursQ2">
+                <input type="range" min="0" max="20" step="5" value="0" class="slider" id="hoursQ2-slider"  onchange="showHourRanges(this)">
+                <label id="range-output">0</label>
             </div>
             
             <div class="question-divider">
@@ -71,8 +72,8 @@
 
             <!-- Question 3 -->
             <div class="question-box">
-                <h1 class="question">On average, how many hours are spent monthly on adminstrative work concerning
-                    grants?</h1>
+                <label class="question">On average, how many hours are spent monthly on adminstrative work concerning
+                    grants?</label>
                 
                 <button type="button" class="btn btn-secondary help" data-container="body" data-toggle="popover"
                     data-placement="top" data-content="This includes hours spent managing your grant pipeline, 
@@ -82,7 +83,8 @@
                 </button>
             </div>
             <div class="range-slider">                
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+                <input type="range" min="0" max="20" step="5" value="0" class="slider" id="hoursQ3-slider" onchange="showHourRanges(this)">
+                <label id="range-output">0</label>
             </div>
            
             <div class="question-divider">
@@ -91,8 +93,8 @@
             
             <!-- Question 4 -->
             <div class="question-box">
-                <h1 class="question">On average, how many hours are spent monthly on tracking, reporting, and preparing
-                    tax reciepts annually?</h1>      
+                <label class="question" for="hoursQ4">On average, how many hours are spent monthly on tracking, reporting, and preparing
+                    tax reciepts annually?</label>      
             </div>
 
             <div class="question-divider">
@@ -100,7 +102,8 @@
             </div>
 
             <div class="range-slider">                
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+                <input type="range" min="0" max="20" step="5" value="0" class="slider" id="hoursQ4" onchange="showHourRanges(this)">
+                <label id="range-output">0</label>
             </div>
             
             
@@ -143,26 +146,6 @@
 
     <!-- Custom JS -->
     <script src="../../index.js"></script>  
-
-    <script>
-      
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value; // Display the default slider value
-
-        // Update the current slider value (each time you drag the slider handle)
-        slider.onchange = function() {
-        //crude if-else statement for getting the ranges of the hours to display
-        var temp = parseInt(this.value) + 5;
-        if (this.value == 20){
-            output.innerHTML = this.value + "+";
-        }
-        else {
-            output.innerHTML = this.value + "-" + temp;
-        }
-        }        
-    </script>
-
 
 </body>
 

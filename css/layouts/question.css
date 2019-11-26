@@ -4,7 +4,7 @@ div.question-box {
   align-items: center;
   margin: 0.3rem 0;
 }
-div.question-box h1.question {
+div.question-box label.question {
   font-size: 1.8rem;
   color: #104b7d;
   font-weight: 400;

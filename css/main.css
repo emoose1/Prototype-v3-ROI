@@ -28,7 +28,7 @@ div.question-box {
   align-items: center;
   margin: 0.3rem 0;
 }
-div.question-box h1.question {
+div.question-box label.question {
   font-size: 1.8rem;
   color: #104b7d;
   font-weight: 400;
@@ -214,6 +214,11 @@ div.nav-button {
   height: 25px;
   background: #0266AC;
   cursor: pointer;
+}
+
+div.range-slider label {
+  font-size: 3rem;
+  color: #104b7d;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -33,4 +33,9 @@
   cursor: pointer;
 }
 
+div.range-slider label {
+  font-size: 3rem;
+  color: #104b7d;
+}
+
 /*# sourceMappingURL=slider.css.map */
