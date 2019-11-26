@@ -25,7 +25,7 @@ function userInfo(){
     ROI.orgEmail = $('#email').val();
     ROI.TBcontact = $('#tbContactName').val();
     ROI.projectNum = $('#projectNum').val();
-    ROI.phone = $('#telNum')
+    ROI.phone = $('#telNum').val();
     ROI.orgName = $('#orgName').val();
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
 }
