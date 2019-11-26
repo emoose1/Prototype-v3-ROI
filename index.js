@@ -101,24 +101,50 @@ var ratings = document.querySelector('#ratings');
     document.querySelector('#gradeLabel').textContent = grade.value + " (" + label + ")";
   });
 
-  //For getting the next range sibling 
-  function getNextRangeSibling(n)
-  {
-      x = n.nextSibling;
-      while (x.nodeType!=1) {
-        x = x.nextSibling;
-       }
-        return x;
+//For getting the next range sibling 
+function getNextRangeSibling(n)
+{
+    x = n.nextSibling;
+    while (x.nodeType!=1) {
+      x = x.nextSibling;
+      }
+      return x;
+}
+
+//Need to work through error with document.getAttribute to help consolidate display functions by using step and min and max. This'll also fix ClientsServed Question 2
+
+//For displaying the value of each range slider
+function showHourRanges(self)
+{
+  temp = getNextRangeSibling(self).innerHTML=self.value;
+  if (temp==20){
+      getNextRangeSibling(self).innerHTML=self.value + "+";
+  }
+  else{
+  getNextRangeSibling(self).innerHTML=self.value + " - " +(parseInt(temp) + 5);
+  }
+}
+
+function showClientsRanges(self){
+
+  temp = getNextRangeSibling(self).innerHTML=self.value;
+  if (temp==150000){
+      getNextRangeSibling(self).innerHTML= "$" + self.value + "+";
+  }
+  else{
+  getNextRangeSibling(self).innerHTML= "$" + self.value + " - " +  "$" + (parseInt(temp) + 25000);
   }
 
-  //For displaying the value of each range slider
-  function showHourRanges(self)
-  {
-    temp = getNextRangeSibling(self).innerHTML=self.value;
-    if (temp==20){
-        getNextRangeSibling(self).innerHTML=self.value + "+";
-    }
-    else{
-    getNextRangeSibling(self).innerHTML=self.value + " - " +(parseInt(temp) + 5);
-    }
+}
+
+function showDollarsRanges(self){
+  
+  temp = getNextRangeSibling(self).innerHTML=self.value;
+  if (temp==20000){
+      getNextRangeSibling(self).innerHTML= "$" + self.value + "+";
   }
+  else{
+  getNextRangeSibling(self).innerHTML= "$" + self.value + " - " +  "$" + (parseInt(temp) + 5000);
+  }
+
+}

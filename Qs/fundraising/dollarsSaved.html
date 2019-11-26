@@ -36,11 +36,12 @@
 
             <!-- Question 1 -->
             <div class="question-box">
-                <label class="question">On average, how much revenue is generated from donations annually?</label>
+                <label class="question" for="dollarsQ1">On average, how much revenue is generated from donations annually?</label>
             </div>
 
-            <div class="range-slider">
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+            <div class="range-slider" id="dollarsQ1">
+                <input type="range" min="0" max="20000" step="5000" value="0" class="slider" id="dollarsQ1-slider" onchange="showDollarsRanges(this)">
+                <label id="range-output">0</label>
             </div>
                 
             <div class="question-divider">
@@ -49,12 +50,12 @@
 
             <!-- Question 2 -->
             <div class="question-box">
-                <label class="question">On average, what is the value of grant revenue won by your organization?</label>
-
+                <label class="question" for="dollarsQ2">On average, what is the value of grant revenue won by your organization?</label>
             </div>
 
-            <div class="range-slider">
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+            <div class="range-slider" id="dollarsQ2">
+                <input type="range" min="0" max="20000" step="5000" value="0" class="slider" id="dollarsQ2-slider" onchange="showDollarsRanges(this)">
+                <label id="range-output">0</label>
             </div>
                 
             <div class="question-divider">
@@ -63,12 +64,13 @@
 
             <!-- Question 3 -->
             <div class="question-box">
-                <label class="question">On average, how much money is spent on fundraising management systems annually
+                <label class="question" for="dollarsQ3">On average, how much money is spent on fundraising management systems annually
                     (including licensing, hosting, and support fees)?</label>
             </div>
 
-            <div class="range-slider">
-                <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
+            <div class="range-slider" id="dollarsQ3">
+                <input type="range" min="0" max="20000" step="5000" value="0" class="slider" id="dollarsQ3-slider" onchange="showDollarsRanges(this)">
+                <label id="range-output">0</label>
             </div>
                 
             <div class="question-divider">
@@ -80,7 +82,7 @@
                 <label class="question">Annual gross fundraising expenses.</label>
             </div>
 
-            <div class="range-slider">
+            <div class="range-slider" id="dollarsQ2">
                 <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
             </div>
                 
@@ -93,7 +95,7 @@
                 <label class="question">Annual gross fundraising revenue.</label>
             </div>
             
-            <div class="range-slider">
+            <div class="range-slider" id="dollarsQ3">
                 <input type="range" min="1" max="8" value="0" class="slider" id="myRange">
             </div>
                 
