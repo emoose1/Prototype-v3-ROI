@@ -64,7 +64,8 @@ form.form-box div.form-group input {
   font-size: 1.5rem;
   border-radius: 1rem;
 }
-form.form-box button.btn-primary {
+
+button.btn-primary {
   font-size: 1.7rem;
   font-weight: bolder;
   padding-left: 2rem;
