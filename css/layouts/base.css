@@ -10,7 +10,7 @@ body, html {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #d8eee9;
 }
 
 body.index-body {
@@ -19,6 +19,7 @@ body.index-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(#F7F7F7, #F7F7F7 50%, #d8eee9, #d8eee9 50%);
 }
 
 a {
