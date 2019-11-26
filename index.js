@@ -87,7 +87,7 @@ function display(){
 
 //Slider Functions
 var ratings = document.querySelector('#ratings');
-    ratings.addEventListener('value-change', function() {
+  ratings.addEventListener('value-change', function() {
     document.querySelector('#ratingsLabel').textContent = ratings.value;
   });
 
