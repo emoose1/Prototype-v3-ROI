@@ -35,6 +35,7 @@ div.progress {
   box-shadow: 0 0 0.3rem black;
   margin-bottom: 4rem;
   margin-top: 4rem;
+  max-width: 60rem;
 }
 div.progress label {
   text-align: center;

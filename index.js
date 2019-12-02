@@ -32,7 +32,7 @@ function userInfo(){
 
 //Collecting Time
 function time(){
-    var hours = [$('#timeQ1').val(), $('#timeQ2').val(), $('#timeQ3').val(), $('#timeQ4').val()];
+    var hours = [$('#hoursQ1').val(), $('#hoursQ2').val(), $('#hoursQ3').val(), $('#hoursQ4').val()];
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.time = hours.reduce((a,b) => parseInt(a)+parseInt(b),0);
     // annual value
@@ -43,7 +43,7 @@ function time(){
 }
 //Collecting Money
 function money(){
-    var dollars = [$('#moneyQ1').val(), $('#moneyQ2').val(), $('#moneyQ3').val()];
+    var dollars = [$('#dollarsQ1').val(), $('#dollarsQ2').val(), $('#dollarsQ3').val()];
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.dollars = dollars.reduce((a,b) => parseInt(a)+parseInt(b),0); 
     // annual value

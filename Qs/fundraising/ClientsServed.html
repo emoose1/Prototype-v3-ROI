@@ -35,14 +35,14 @@
     <section class="form">
         <form class="form-box">
             <div class="question-box">
-                <label class="question">What is your organization's annual budget for the year?</label>
+                <label class="question" for="clientsQ1">What is your organization's annual budget for the year?</label>
             </div>
 
             <div class="question-divider">
                 <span></span>
             </div>
 
-            <div class="range-slider">
+            <div class="range-slider" id="clientsQ1">
                     <input type="range" min="0" max="150000" step="25000" value="0" class="slider" id="question-sliders" onchange="showSliderRanges(this)">
                     <label id="range-output">0</label>
             </div>
@@ -52,7 +52,7 @@
             </div>
 
             <div class="question-box">
-                <label class="question">How many unique clients does your organization serve in a year?</label>
+                <label class="question" for="clientsQ2">How many unique clients does your organization serve in a year?</label>
                 <button type="button" class="btn btn-secondary help" data-container="body" data-toggle="popover"
                     data-placement="top" data-content="This includes generating and communicating donation reports, 
                 hours spent tracking and reporting on in-kind donation gifts, reconciling 
@@ -65,7 +65,7 @@
                 <span></span>
             </div>
 
-            <div class="range-slider">
+            <div class="range-slider" id="clientsQ2">
                     <input type="range" min="0" max="500" step="100" value="0" class="slider" id="question-sliders" onchange="showSliderRanges(this)">
                     <label id="range-output">0</label>
             </div>
