@@ -119,8 +119,6 @@ function showSliderRanges(self)
   temp = getNextRangeSibling(self).innerHTML = self.value;
   sliderMaxValue = document.getElementById("question-sliders").getAttribute("max");
   sliderStepValue = document.getElementById("question-sliders").getAttribute("step");
-  
-
 
   if (temp==sliderMaxValue){
       getNextRangeSibling(self).innerHTML=self.value + "+";
@@ -128,8 +126,5 @@ function showSliderRanges(self)
   else{
   getNextRangeSibling(self).innerHTML=self.value + " - " + (parseInt(temp) + parseInt(sliderStepValue));
   }
-
-  
-  alert(sliderStepValue);
 
 }
