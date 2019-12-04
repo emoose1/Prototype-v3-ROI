@@ -97,13 +97,13 @@ function update(ROI){
 //Displaying Results
 function display(){
     ROI = JSON.parse(sessionStorage.getItem('inputs'))
-    $('#dollarsSaved').html('$' + this.ROI.dollars  + "+");
+    $('#dollarsSaved').html('$ ' + this.ROI.dollars);
    
     $('#hoursSaved').html(this.ROI.time  + "+");
 
-    $('#costPerDollarRaised').html(this.ROI.cdr  + "+");
+    $('#costPerDollarRaised').html("$ " + this.ROI.cdr.toFixed(2));
 
-    $('#clientsServed').html(parseInt(this.ROI.clients) + "+");
+    $('#clientsServed').html(parseInt(this.ROI.clients));
 }
 
 
