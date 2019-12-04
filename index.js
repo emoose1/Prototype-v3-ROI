@@ -99,7 +99,7 @@ function display(){
     ROI = JSON.parse(sessionStorage.getItem('inputs'))
     $('#dollarsSaved').html('$ ' + this.ROI.dollars);
    
-    $('#hoursSaved').html(this.ROI.time  + "+");
+    $('#hoursSaved').html(this.ROI.time);
 
     $('#costPerDollarRaised').html("$ " + this.ROI.cdr.toFixed(2));
 
