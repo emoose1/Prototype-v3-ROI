@@ -42,8 +42,8 @@
                 <span></span>
             </div>
 
-            <div class="range-slider" id="clientsQ1">
-                    <input type="range" min="0" max="150000" step="25000" value="0" class="slider" id="question-sliders" onchange="showSliderRanges(this)">
+            <div class="range-slider">
+                    <input type="range" min="0" max="150000" step="25000" value="0" class="slider" id="clientsQ1" onchange="showSliderRanges(this)">
                     <label id="range-output">0</label>
             </div>
 
@@ -65,8 +65,8 @@
                 <span></span>
             </div>
 
-            <div class="range-slider" id="clientsQ2">
-                    <input type="range" min="0" max="500" step="100" value="0" class="slider" id="question-sliders" onchange="showSliderRanges(this)">
+            <div class="range-slider">
+                    <input type="range" min="0" max="500" step="100" value="0" class="slider" id="clientsQ2" onchange="showSliderRanges(this)">
                     <label id="range-output">0</label>
             </div>
 
@@ -76,10 +76,10 @@
 
             <div class="nav-button">
                 <a href="dollarsSaved.html">
-                    <button type="button" onclick="userInfo()" class="btn btn-primary">Back</button>
+                    <button type="button" class="btn btn-primary">Back</button>
                 </a>
                 <a href="results.html">
-                    <button type="button" onclick="userInfo()" class="btn btn-primary">Next</button>
+                    <button type="button" onclick="clientsServed()" class="btn btn-primary">Next</button>
                 </a>
             </div>
         </form>
@@ -111,7 +111,6 @@
 
     <!-- Custom JS -->
     <script src="../../index.js"></script>  
-
 </body>
 
 </html>

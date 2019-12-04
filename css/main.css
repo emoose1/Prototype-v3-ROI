@@ -126,6 +126,11 @@ div.calc a.ROI-icon {
 div.calc a.ROI-icon:hover {
   transform: scale(1.1);
 }
+div.calc h2 {
+  font-size: 2rem;
+  color: #104b7d;
+  margin-bottom: 3rem;
+}
 div.calc img.ROI-pic {
   height: 85%;
   width: 100%;
@@ -189,7 +194,7 @@ div.nav-button {
 
 .slider {
   -webkit-appearance: none;
-  width: 75%;
+  width: 70%;
   height: 1.25rem;
   margin: 2rem 0rem 3rem;
   background: #7FC9B0;
@@ -219,8 +224,28 @@ div.nav-button {
 }
 
 div.range-slider label {
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #104b7d;
+  margin-left: 0.5rem;
+}
+
+div.number-input {
+  height: 3rem;
+  margin: 2rem 0rem 3rem;
+  color: #104b7d;
+}
+div.number-input span {
+  font-size: 2.3rem;
+  margin-right: 0.7rem;
+}
+div.number-input input[type=number] {
+  background: #7FC9B0;
+  border-radius: 0.5rem;
+  border: 0.5rem #7FC9B0;
+  color: #104b7d;
+  font-size: 1.75rem;
+  width: 30%;
+  text-indent: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

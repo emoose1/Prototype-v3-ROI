@@ -28,28 +28,38 @@ function userInfo(){
     ROI.phone = $('#telNum').val();
     ROI.orgName = $('#orgName').val();
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
+
+    //delete this line after testing
+    console.log(sessionStorage.getItem("inputs"));
+
 }
 
 //Collecting Time
 function time(){
-    var hours = [$('#hoursQ1').val(), $('#hoursQ2').val(), $('#hoursQ3').val(), $('#hoursQ4').val()];
+    var hours = [$('#hQ1').val(), $('#hQ2').val(), $('#hQ3').val(), $('#hQ4').val()];
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.time = hours.reduce((a,b) => parseInt(a)+parseInt(b),0);
     // annual value
     ROI.time *= 12;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
     //Calculation - summing all the hours
-    
+
+    //delete this line after testing
+    console.log(sessionStorage.getItem("inputs"));
+
 }
 //Collecting Money
 function money(){
-    var dollars = [$('#dollarsQ1').val(), $('#dollarsQ2').val(), $('#dollarsQ3').val()];
+    var moneySaved = [$('#dollarsQ1').val(), $('#dollarsQ2').val(), $('#dollarsQ3').val()];
+
     ROI = update(sessionStorage.getItem('inputs'));
-    ROI.dollars = dollars.reduce((a,b) => parseInt(a)+parseInt(b),0); 
+    ROI.dollars = moneySaved.reduce((a,b) => parseInt(a)+parseInt(b),0); 
     // annual value
     ROI.dollars *=12;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
-    
+
+    //delete this line after testing
+    console.log(sessionStorage.getItem("inputs"));
 }
 
 // CDR
@@ -58,6 +68,10 @@ function costDollarRaised(){
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.cdr = cdr;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
+
+    //delete this line after testing
+    console.log(sessionStorage.getItem("inputs"));
+
 }
 
 //Clients Served
@@ -67,6 +81,10 @@ function clientsServed(){
     ROI = update(sessionStorage.getItem('inputs'));
     ROI.clients = estServiceCost;
     sessionStorage.setItem("inputs", JSON.stringify(ROI));
+
+    //delete this line after testing
+    console.log(sessionStorage.getItem("inputs"));
+
 }
 
 
@@ -79,13 +97,13 @@ function update(ROI){
 //Displaying Results
 function display(){
     ROI = JSON.parse(sessionStorage.getItem('inputs'))
-    $('#dollarsSaved').html('$' + this.ROI.dollars);
+    $('#dollarsSaved').html('$' + this.ROI.dollars  + "+");
    
-    $('#hoursSaved').html(this.ROI.time);
+    $('#hoursSaved').html(this.ROI.time  + "+");
 
-    $('#costPerDollarRaised').html(this.ROI.cdr);
+    $('#costPerDollarRaised').html(this.ROI.cdr  + "+");
 
-    $('#clientsServed').html(this.ROI.clients);
+    $('#clientsServed').html(parseInt(this.ROI.clients) + "+");
 }
 
 
@@ -105,8 +123,13 @@ function getNextRangeSibling(n)
 function showSliderRanges(self)
 {
   temp = getNextRangeSibling(self).innerHTML = self.value;
-  sliderMaxValue = document.getElementById("question-sliders").getAttribute("max");
-  sliderStepValue = document.getElementById("question-sliders").getAttribute("step");
+  sliderMaxValue = document.querySelector('.slider').getAttribute("max");
+  sliderMinValue = document.querySelector('.slider').getAttribute("min");
+  sliderStepValue = document.querySelector('.slider').getAttribute("step");
+
+  
+  console.log(sliderMaxValue - sliderStepValue);
+
 
   if (temp==sliderMaxValue){
       getNextRangeSibling(self).innerHTML=self.value + "+";

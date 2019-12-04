@@ -25,7 +25,7 @@
     <title>Hours Saved</title>
 </head>
 
-<body>
+<body onload="display()">
     <header class="main-header">
         <div class="wrap">
             <a href="../../index.html">
@@ -39,25 +39,40 @@
         <div class="calc-row">
             <div class="calc">
                 <img class="ROI-pic" src="../../imgs/hourssaved.png" alt="Hours Saved">
+                <h2 id="hoursSaved" style="font-weight: bold"></h2>
                 <h2 href="#" class="ROI-type">Hours<br />Saved</h2>
             </div>
             <div class="calc">
                 <img class="ROI-pic" src="../../imgs//dollars saved.png" alt="Dollars Saved">
+                <h2 id="dollarsSaved" style="font-weight: bold"></h2>
                 <h2 href="#" class="ROI-type">Dollars<br />Saved</h2>
             </div>
             <div class="calc">
                 <img class="ROI-pic" src="../../imgs/costperdollar.png" alt="Cost per Dollar">
+                <h2 id="costPerDollarRaised" style="font-weight: bold"></h2>
                 <h2 href="#" class="ROI-type">Cost per Dollar<br />Raised</h2>
             </div>
             <div class="calc">
                 <img class="ROI-pic" src="../../imgs/clientsserved.png" alt="Clients Served">
+                <h2 id="clientsServed" style="font-weight: bold"></h2>
                 <h2 href="#" class="ROI-type">Clients<br />Served</h2>
             </div>
         </div>
+        
 
+        <div class="question-divider">
+            <span></span>
+        </div>
 
+        <div class="nav-button">
+            <a href="#" download="">
+                <button type="button" class="btn btn-primary">Export/Download Results</button>
+            </a>
+        </div>
 
-
+        <div class="question-divider">
+            <span></span>
+        </div>
 
     </section>
 
@@ -66,13 +81,6 @@
             style="width: 100%"><label>Done!</label></div>
     </div>
 
-    <div class="nav-button">
-        <a href="#" download="">
-            <button type="button" class="btn btn-primary">Export/Download Results</button>
-        </a>
-
-       
-    </div>
 
     <!-- Poppers, Bootstrap.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

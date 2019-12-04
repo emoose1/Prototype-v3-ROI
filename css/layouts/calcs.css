@@ -25,6 +25,11 @@ div.calc a.ROI-icon {
 div.calc a.ROI-icon:hover {
   transform: scale(1.1);
 }
+div.calc h2 {
+  font-size: 2rem;
+  color: #104b7d;
+  margin-bottom: 3rem;
+}
 div.calc img.ROI-pic {
   height: 85%;
   width: 100%;
